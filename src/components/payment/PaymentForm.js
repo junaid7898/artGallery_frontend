@@ -19,7 +19,7 @@ const PaymentForm = ({
     setLoading(true);
     hideModal();
     try {
-      const response = await fetch('http://192.168.0.116:8080/pay', {
+      const response = await fetch('https://art-gallery.herokuapp.com/pay', {
         method: 'POST',
         body: JSON.stringify({
           name: 'junaid',
